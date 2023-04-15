@@ -38,7 +38,7 @@ $(function () {
         $(this).removeClass('future');
         $(this).addClass('past');
       }
-      console.log(currentHour);
+      
   })};
 
   timeBlock();
