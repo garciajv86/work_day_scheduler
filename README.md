@@ -2,22 +2,24 @@
 
 ## Description
 
-In this challenge I needed to use jQuery and dayjs to complete. My most challenging part of this 
-challenge was learning to implement local storage, but
-by push past the struggle I have learnt a more in depth understanding of local storage which for 
-me was a huge leap forward for me! I am now much more confident in
-my abilities to use and implement local storage in future challenges and projects! Basically this 
-project now has color coded time blocks for each hour for when
-the normal work hour is past, present, or future. Also the current date is now in the header of 
-the website and the user can now type in which ever event they
-need to that is within normal business hours, and if they exit the page or refresh the page the 
-events are still shown in their work day scheduler. In order for the new events that the user
-wants to add to be saved the user can use the save button to save the event to keep for 
+In this challenge I needed to use jQuery and dayjs to complete. My most challenging part of this<br> 
+challenge was learning to implement local storage, but<br>
+by push past the struggle I have learnt a more in depth understanding of local storage which for<br> 
+me was a huge leap forward for me! I am now much more confident in<br>
+my abilities to use and implement local storage in future challenges and projects! Basically this<br> 
+project now has color coded time blocks for each hour for when<br>
+the normal work hour is past, present, or future. Also the current date is now in the header of<br> 
+the website and the user can now type in which ever event they<br>
+need to that is within normal business hours, and if they exit the page or refresh the page the<br> 
+events are still shown in their work day scheduler. In order for the new events that the user<br>
+wants to add to be saved the user can use the save button to save the event to keep for<br> 
 the future.
 
 ## ScreenShot
 
+Link to site:  <a href=https://garciajv86.github.io/work_day_scheduler alt='Work Day Scheduler'>Work Day Scheduler</a>
 
+![screenshot](./assets/css/images/WorkDayScheduler.png)
 
 ## User Story
 
