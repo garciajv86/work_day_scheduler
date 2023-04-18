@@ -4,39 +4,39 @@
 $(function () {
 
   var currentDay = $('#currentDay');
-  var saveBtn = $('.saveBtn');
+  var timeBlockContainer = $('#time-block-container');
   
   // Save event function to local storage
-  function saveEvent() {
+  //function saveEvent() {
 
-      var desc = $('#9 .description').val();
-      localStorage.setItem('desc9', desc);
+      //var desc = $('#9 .description').val();
+      //localStorage.setItem('desc9', desc);
 
-      var desc = $('#10 .description').val();
-      localStorage.setItem('desc10', desc);
+      //var desc = $('#10 .description').val();
+      //localStorage.setItem('desc10', desc);
 
-      var desc = $('#11 .description').val();
-      localStorage.setItem('desc11', desc);
+  //     var desc = $('#11 .description').val();
+  //     localStorage.setItem('desc11', desc);
 
-      var desc = $('#12 .description').val();
-      localStorage.setItem('desc12', desc);
+  //     var desc = $('#12 .description').val();
+  //     localStorage.setItem('desc12', desc);
 
-      var desc = $('#13 .description').val();
-      localStorage.setItem('desc13', desc);
+  //     var desc = $('#13 .description').val();
+  //     localStorage.setItem('desc13', desc);
 
-      var desc = $('#14 .description').val();
-      localStorage.setItem('desc14', desc);
+  //     var desc = $('#14 .description').val();
+  //     localStorage.setItem('desc14', desc);
 
-      var desc = $('#15 .description').val();
-      localStorage.setItem('desc15', desc);
+  //     var desc = $('#15 .description').val();
+  //     localStorage.setItem('desc15', desc);
 
-      var desc = $('#16 .description').val();
-      localStorage.setItem('desc16', desc);
+  //     var desc = $('#16 .description').val();
+  //     localStorage.setItem('desc16', desc);
 
-      var desc = $('#17 .description').val();
-      localStorage.setItem('desc17', desc);
+  //     var desc = $('#17 .description').val();
+  //     localStorage.setItem('desc17', desc);
 
-  };
+  // };
 
   // Load event function from local storage
   function loadEvent() {
@@ -55,9 +55,16 @@ $(function () {
 
   
   // Event listener on the save button on click to run the saveEvent() function
-  saveBtn.on('click', function(event) {
+  timeBlockContainer.on('click', '.saveBtn' ,function(event) {
     event.preventDefault();
-    saveEvent();
+    var element = $(this);
+    var textareaE = element.siblings('textarea');
+    var textareaJqueryE = $(textareaE[0]);
+    var id = textareaJqueryE.parent().attr('id');
+    var val = textareaJqueryE.val();
+    localStorage.setItem('desc'+id, val);
+
+    //saveEvent();
   });
 
   
